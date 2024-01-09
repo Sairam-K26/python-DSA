@@ -103,3 +103,4 @@ Step 5: Repeat the steps until second_term ≤ 1000
 Step 6: Stop
 
 
+
