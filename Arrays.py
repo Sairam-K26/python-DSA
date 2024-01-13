@@ -1,34 +1,34 @@
-# '''Arrays are a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are 
-# able to store more than one item at the same time.
-# Specifically, they are an ordered collection of elements with every value being of the same data type. That is the most important thing 
-# to remember about Python arrays - the fact that they can only hold a sequence of multiple items that are of the same type.
-# Arrays are a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are 
-# able to store more than one item at the same time.
-# Specifically, they are an ordered collection of elements with every value being of the same data type. That is the most important thing
-#  to remember about Python arrays - the fact that they can only hold a sequence of multiple items that are of the same type.'''
+'''Arrays are a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are 
+able to store more than one item at the same time.
+Specifically, they are an ordered collection of elements with every value being of the same data type. That is the most important thing 
+to remember about Python arrays - the fact that they can only hold a sequence of multiple items that are of the same type.
+Arrays are a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are 
+able to store more than one item at the same time.
+Specifically, they are an ordered collection of elements with every value being of the same data type. That is the most important thing
+ to remember about Python arrays - the fact that they can only hold a sequence of multiple items that are of the same type.'''
 
-#  '''What's the Difference between Python Lists and Python Arrays?
+ '''What's the Difference between Python Lists and Python Arrays?
  
-#  Lists store items that are of various data types. This means that a list can contain integers, floating point numbers, strings, or any
-# other Python data type, at the same time. That is not the case with arrays.
-# As mentioned in the section above, arrays store only items that are of the same single data type. There are arrays that contain only 
-# integers, or only floating point numbers, or only any other Python data type you want to use.'''
+ Lists store items that are of various data types. This means that a list can contain integers, floating point numbers, strings, or any
+other Python data type, at the same time. That is not the case with arrays.
+As mentioned in the section above, arrays store only items that are of the same single data type. There are arrays that contain only 
+integers, or only floating point numbers, or only any other Python data type you want to use.'''
 
 
 
-# #Creating a array
+#Creating a array
 
-# import array as arr
-# arr.array()
-# #or
-# from array import *
-# array()
+import array as arr
+arr.array()
+#or
+from array import *
+array()
 
-# #Defining a array
-# #variable_name = array(typecode,[elements])
-# '''variable_name would be the name of the array.
-# The typecode specifies what kind of elements would be stored in the array. Whether it would be an array of integers, an array of floats or an array of any other Python data type. Remember that all elements should be of the same data type.
-# Inside square brackets you mention the elements that would be stored in the array, with each element being separated by a comma. You can also create an empty array by just writing variable_name = array(typecode) alone, without any elements.'''
+#Defining a array
+#variable_name = array(typecode,[elements])
+'''variable_name would be the name of the array.
+The typecode specifies what kind of elements would be stored in the array. Whether it would be an array of integers, an array of floats or an array of any other Python data type. Remember that all elements should be of the same data type.
+Inside square brackets you mention the elements that would be stored in the array, with each element being separated by a comma. You can also create an empty array by just writing variable_name = array(typecode) alone, without any elements.'''
 
 import array as arr 
 numbers = arr.array('i',[10,20,30])
