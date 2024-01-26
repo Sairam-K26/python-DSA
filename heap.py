@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Heap: A tree-based data structure in which the value of a parent node is ordered in a certain way with respect to the value of its child node(s). A heap can be either a min heap (the value of a parent node is less than or equal to the value of its children) or a max heap (the value of a parent node is greater than or equal to the value of its children).
 
 # Crucial Terms
@@ -119,3 +120,6 @@ print(my_heap.delete_min()) # removing min node i.e 5
 
  
 
+=======
+
+>>>>>>> 61d15e14f537147b99b24b794da3bb558e22b10d
