@@ -14,7 +14,7 @@ print(llist)
 llist.appendleft("z")
 print(llist)
 llist.popleft()
-print(llist)
+print(list)
 
 
 
