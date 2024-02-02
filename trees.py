@@ -67,3 +67,30 @@ print(inorder(root))
 print(preorder(root))
 print(postorder(root))
 
+#tree traversal using iteration method
+def __inorder__ (root):
+    curr = root
+    stack = []
+    while True:
+        while curr:
+            stack.append(curr)
+            curr = curr.left
+        if len(stack) == 0:
+            break
+        curr = stack.pop()
+        print(curr.data,end=" ")
+        curr = curr.right
+def __preorder__ (root):
+    curr = root
+    stack = []
+    while True:
+        while curr:
+            print(curr.data,end=" ")
+            stack.append(curr)
+            curr = curr.left
+        if len(stack) == 0:
+            break
+        curr = stack.pop()
+        curr = curr.right
+
+
