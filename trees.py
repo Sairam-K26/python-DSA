@@ -93,4 +93,3 @@ def __preorder__ (root):
         curr = stack.pop()
         curr = curr.right
 
-
