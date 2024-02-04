@@ -56,6 +56,37 @@ def postorder(node):
         postorder(node.left)
         postorder(node.right)
         print(node.data,end=" ")
+def non_leaf_node_count(node):
+    if node==None:
+        return 0
+    if node.left==None and node.right==None:
+        return 0
+    return 1+non_leaf_node_count(node.left)+non_leaf_node_count(node.right)
+def non_leaf_nodes(node):
+    if node!=None:
+        if node.left!=None or node.right!=None:
+            print(node.data,end=" ")
+        non_leaf_nodes(node.left)
+        non_leaf_nodes(node.right)
+from collections import deque
+def level_order(node):
+    q=deque()
+    curr = node
+    q.append(curr)
+    while len(q)!=0:
+        curr=q.pop()
+        print(curr.data, end=' ')
+        if curr.left:
+            q.append(curr.left)
+        if curr.right:
+            q.append(curr.right)
+def mirror(node):
+    if node == None:
+        return
+    mirror(node.left)
+    mirror(node.right)
+    #swap
+    node.left,node.right = node.right,node.left
 root = Node(10)
 root.left = Node(20)
 root.right = Node(30)
@@ -66,30 +97,7 @@ root.right.right = Node(70)
 print(inorder(root))
 print(preorder(root))
 print(postorder(root))
-
-#tree traversal using iteration method
-def __inorder__ (root):
-    curr = root
-    stack = []
-    while True:
-        while curr:
-            stack.append(curr)
-            curr = curr.left
-        if len(stack) == 0:
-            break
-        curr = stack.pop()
-        print(curr.data,end=" ")
-        curr = curr.right
-def __preorder__ (root):
-    curr = root
-    stack = []
-    while True:
-        while curr:
-            print(curr.data,end=" ")
-            stack.append(curr)
-            curr = curr.left
-        if len(stack) == 0:
-            break
-        curr = stack.pop()
-        curr = curr.right
-
+print(non_leaf_nodes(root))
+print(non_leaf_node_count(root))
+mirror(root)
+level_order(root)
