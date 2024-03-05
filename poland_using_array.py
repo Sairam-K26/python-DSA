@@ -12,7 +12,7 @@ for i in range(n):
             
             low+=1
         elif arr[i]==2:
-            
+
             arr[i],arr[high]=arr[high],arr[i]
  
             high-=1    
